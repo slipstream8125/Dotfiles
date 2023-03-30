@@ -30,19 +30,10 @@ export PKG_CONFIG_PATH=/usr/lib/pkgconfig/:/usr/share/pkgconfig/
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 #ZSH_THEME="agnoster"
-alias lvim="/home/asusg14/.local/bin/lvim"
-alias t='todo.sh'
-alias pgadmin='firefox http://127.0.0.1/pgadmin4/browser/'
-alias ventoygui='/home/asusg14/Ventoy/VentoyGUI.x86_64 > /dev/null 2>/dev/null'
-alias ventoy='sudo /home/asusg14/Ventoy/VentoyWeb.sh'
-alias a='/home/asusg14/sus.sh'
-alias programming='cd /run/media/asusg14/Personal/Programming/'
-alias dotfiles='cd /.dotfiles'
-alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
-alias nvim-kick="NVIM_APPNAME=kickstart nvim"
-alias nvim-chad="NVIM_APPNAME=NvChad nvim"
-alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
-alias neovim="NVIM_APPNAME=NvChad nvim"
+if [ -f ~/.aliases ]; then
+. ~/.aliases
+fi
+
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
