@@ -15,6 +15,7 @@ export GEM_HOME=$HOME/.gem
 export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_4:$LD_LIBRARY_PATH
 export PATH=$LD_LIBRARY_PATH:$PATH
 export PATH=$GEM_HOME/bin:$PATH
+export PATH=/home/slipstream/.local/bin:$PATH
 export PATH=/opt/metasploit-framework/bin:$PATH
 export PATH=/usr/local/cuda/bin:/home/asusg14/.local/bin:/home/asusg14/bin:/home/asusg14/.gem/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/asusg14/.local/share/JetBrains/Toolbox/scripts:/var/lib/snapd/snap/bin:/opt/cuda/bin:$PATH
 export PATH=/home/asusg14/Android/cmdline-tools/bin/:$PATH
@@ -22,6 +23,8 @@ export PATH=/home/asusg14/Flutter/flutter/bin/:$PATH
 export PATH=/home/asusg14/dart-sdk/bin/:$PATH
 export PATH=/home/asusg14/.cargo/bin/:$PATH
 export PATH=/home/asusg14/.local/share/neovim/bin/:$PATH
+export LC_ALL=en_IN.UTF-8
+export LANG=en_IN.UTF-8
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig/:/usr/share/pkgconfig/
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
