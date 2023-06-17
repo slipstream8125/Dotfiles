@@ -7,9 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #Ruby + GEM
 export GEM_HOME=$HOME/.gem
 export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_4:$LD_LIBRARY_PATH
@@ -31,7 +29,6 @@ export PKG_CONFIG_PATH=/usr/lib/pkgconfig/:/usr/share/pkgconfig/
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel10k/powerlevel10k"
 #ZSH_THEME="agnoster"
 if [ -f ~/.aliases ]; then
 . ~/.aliases
@@ -113,7 +110,6 @@ bindkey -s ^a "nvims\n"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -169,3 +165,18 @@ unset __conda_setup
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/home/asusg14/.spicetify
+export PATH=$PATH:/home/slipstream/.spicetify
+
+#starship prompt
+# ~/.zshrc
+eval "$(starship init zsh)"
+
+if command -v zoxide > /dev/null; then
+  eval "$(zoxide init zsh)"
+fi
+# Source the Lazyman shell initialization for aliases and nvims selector
+# shellcheck source=.config/nvim-Lazyman/.lazymanrc
+[ -f ~/.config/nvim-Lazyman/.lazymanrc ] && source ~/.config/nvim-Lazyman/.lazymanrc
+# Source the Lazyman .nvimsbind for nvims key binding
+# shellcheck source=.config/nvim-Lazyman/.nvimsbind
+[ -f ~/.config/nvim-Lazyman/.nvimsbind ] && source ~/.config/nvim-Lazyman/.nvimsbind
