@@ -1,0 +1,1 @@
+/home/slipstream/.config/fish
