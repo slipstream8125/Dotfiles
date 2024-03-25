@@ -3,6 +3,8 @@ My own personal linux dotfiles
 
 ## My current setup
 
+![My desktop setup]("./setup.png")
+
 **Laptop** : Asus Zephyrus G14 2021
 
 **Current Distro** : [CachyOS](https://cachyos.org/)
