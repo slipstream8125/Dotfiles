@@ -11,11 +11,13 @@ alias hivemq-websocketclient='open https://www.hivemq.com/demos/websocket-client
 alias thingspeak='open https://thingspeak.com/channels &> /dev/null'
 alias sts="cd /mnt/Personal/VIT/'6th Sem'/STS"
 alias VIT="cd /mnt/Personal/VIT"
-alias StratOS="cd /mnt/Personal/StratOS-team"
+export StratOS="/mnt/Personal/StratOS-team"
 alias nvchad="NVIM_APPNAME=nvchad nvim"
 alias rss="neix"
 #alias cd='z'
 alias nvimconfig='cd ~/.config/nvim'
-
+export PERSONAL="/mnt/Personal/Programming/neorg/"
 # Vim-like aliases
 alias :q="exit"
+# Source private aliases
+source ~/.config/fish/private-aliases.fish

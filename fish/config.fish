@@ -4,3 +4,5 @@ source /home/slipstream/.config/fish/aliases.fish
 export EDITOR=nvim
 thefuck --alias | source
 zoxide init fish | source
+
+fish_add_path /home/slipstream/.spicetify
