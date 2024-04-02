@@ -14,3 +14,5 @@ My own personal linux dotfiles
 **Terminal emulator used** : kitty
 
 **nvim config used** : [StratVIM](https://github.com/StratOS-Linux/StratVIM)
+
+**tmux config used** : A slightly modified version of [oh-my-tmux](https://github.com/gpakosz/.tmux)
